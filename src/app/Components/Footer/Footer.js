@@ -3,15 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import {
-  Facebook,
-  Twitter,
-  Instagram,
-  Linkedin,
-  Mail,
-  MapPin,
-  Phone,
-} from "lucide-react";
+import { Instagram, Mail, MapPin, Phone } from "lucide-react";
 
 const socialLinks = [
   // { name: "Facebook", icon: Facebook, href: "https://facebook.com" },

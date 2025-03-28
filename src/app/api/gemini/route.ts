@@ -62,7 +62,7 @@ export async function POST(req) {
     const { message, history } = body;
 
     // Define el objeto default
-    let userInfoDefault = {
+    const userInfoDefault = {
       role: "user",
       parts: [
         {
