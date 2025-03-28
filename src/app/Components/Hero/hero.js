@@ -45,9 +45,11 @@ export default function DigitalSection() {
                 </button>
               </Link>
 
-              <button className="text-white/80 px-8 py-3 rounded-full text-lg font-semibold inline-flex items-center justify-center group transition-all duration-300 ease-in-out hover:bg-[#76EA3A]/90 hover:text-[#040641]">
-                Ubícanos
-                <MapPinned className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+              <button className=" text-white/80 px-8 py-3 rounded-full text-lg font-semibold inline-flex items-center justify-center group transition-all duration-300 ease-in-out hover:bg-[#76EA3A]/90 hover:text-[#040641]">
+                <Link className="flex" href={"#contacto"}>
+                  Ubícanos
+                  <MapPinned className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                </Link>
               </button>
             </div>
           </div>
