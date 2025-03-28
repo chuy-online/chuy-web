@@ -6,7 +6,16 @@ import Link from "next/link";
 import { ArrowRight, ArrowLeft } from "lucide-react";
 import { motion } from "framer-motion";
 import Footer from "../Components/Footer/Footer";
-import ContactSection from "../Components/contactUs/ContactUs";
+// import ContactSection from "../Components/contactUs/ContactUs";
+
+import dynamic from "next/dynamic";
+
+const ContactSection = dynamic(
+  () => import("../Components/contactUs/ContactUs"),
+  {
+    ssr: false,
+  }
+);
 
 const images = [
   "https://res.cloudinary.com/djuj7xwuj/image/upload/v1742914834/Dise%C3%B1o_sin_t%C3%ADtulo_12_kkqqgo.webp",

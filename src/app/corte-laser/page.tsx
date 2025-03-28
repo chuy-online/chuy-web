@@ -6,7 +6,14 @@ import Link from "next/link";
 import { ArrowRight, ArrowLeft } from "lucide-react";
 import { motion } from "framer-motion";
 import Footer from "../Components/Footer/Footer";
-import ContactSection from "../Components/contactUs/ContactUs";
+import dynamic from "next/dynamic";
+
+const ContactSection = dynamic(
+  () => import("../Components/contactUs/ContactUs"),
+  {
+    ssr: false,
+  }
+);
 const images = [
   "https://res.cloudinary.com/djuj7xwuj/image/upload/v1742934949/rrrrr_1_ielt6h.webp",
 ];

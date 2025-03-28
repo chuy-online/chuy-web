@@ -6,7 +6,17 @@ import Link from "next/link";
 import { ArrowRight, ArrowLeft } from "lucide-react";
 import { motion } from "framer-motion";
 import Footer from "../Components/Footer/Footer";
-import ContactSection from "../Components/contactUs/ContactUs";
+// import ContactSection from "../Components/contactUs/ContactUs";
+
+import dynamic from "next/dynamic";
+
+const ContactSection = dynamic(
+  () => import("../Components/contactUs/ContactUs"),
+  {
+    ssr: false,
+  }
+);
+
 const images = [
   "https://res.cloudinary.com/djuj7xwuj/image/upload/v1743110042/rrrrr_3_ubbzvc.webp",
 ];
@@ -122,48 +132,6 @@ export default function CorporeosPage() {
           </div>
         </div>
       </div>
-
-      {/* Features Section */}
-      {/* <section className="py-16">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.h2
-            className="text-4xl font-bold text-center mb-12 text-[#76EA3A]"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            Características Principales
-          </motion.h2>
-
-          <div className="grid grid-cols-2 gap-8">
-            {features.map((feature, index) => (
-              <motion.div
-                key={feature.title}
-                className="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden border border-white/20 hover:border-[#76EA3A]/50 transition-all duration-300"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <div className="h-auto w-auto">
-                  <img
-                    src={feature.image || "/placeholder.svg"}
-                    alt={feature.title}
-                    // width={400}
-                    // height={300}
-                    className=" h-40 w-40 object-cover transition-transform duration-300 hover:scale-110"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-white mb-2">
-                    {feature.title}
-                  </h3>
-                  <p className="text-white/80">{feature.description}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section> */}
 
       {/* Features Section */}
       <section className="py-16">
