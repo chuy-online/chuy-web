@@ -1,0 +1,65 @@
+/* Add this to your global CSS file or CSS module */
+
+@keyframes slides {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .full-bleed-carousel {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+  
+  .logos {
+    padding: 0px 0;
+    overflow: hidden;
+  }
+  
+  .logos::before,
+  .logos::after {
+    position: absolute;
+    top: 0;
+    width: 50;
+    height: 100%;
+    content: '';
+    z-index: 2;
+  }
+  
+  .logos::before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #040c62);
+  }
+  
+  .logos::after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #040c62);
+  }
+  
+  .logo_items {
+    animation: 35s slides infinite linear;
+  }
+  
+  .logos:hover .logo_items {
+    animation-play-state: paused;
+  }
+  
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .animate-slide {
+    animation: slide 35s linear infinite;
+  }
