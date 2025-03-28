@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Linkedin, Twitter, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 
 const teamMembers = [
   {

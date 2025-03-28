@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Phone, MapPin } from "lucide-react";
-import Image from "next/image";
 import DynamicMap from "./DynamicMap";
 
 const locations = [

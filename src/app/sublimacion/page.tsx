@@ -6,7 +6,6 @@ import Link from "next/link";
 import { ArrowRight, ArrowLeft } from "lucide-react";
 import { motion } from "framer-motion";
 import Footer from "../Components/Footer/Footer";
-import { url } from "inspector";
 import ContactSection from "../Components/contactUs/ContactUs";
 
 const images = [

@@ -187,7 +187,7 @@ const FloatingChat = () => {
   const EXPIRATION_TIME = 2 * 60 * 1000; // 2 minutos en milisegundos
   const [messages, setMessages] = useState([
     {
-      text: "Hola en que te puedo ayudar?",
+      text: "Hola en que te puedo ayudar??",
       fromUser: false,
     },
   ]);

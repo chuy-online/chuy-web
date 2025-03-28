@@ -1,10 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
-import { Palette, Star } from "lucide-react";
+import { Star } from "lucide-react";
 import Link from "next/link";
-import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 export default function FullCalidad() {
   return (

@@ -1,7 +1,7 @@
 import { GoogleGenerativeAI } from "@google/generative-ai"; // Importa el SDK de Google Gemini
 
 const apiKey = process.env.GEMINI_API_KEY; // Asegúrate de tener la API key en tus variables de entorno
-const genAI = new GoogleGenerativeAI(apiKey);
+const genAI = new GoogleGenerativeAI(apiKey as string);
 
 const instructions = `Eres Alejandra, trabajas en el equipo de ventas de Chuy Publicidad. Tu objetivo es responder preguntas sobre nuestros servicios y dirigir al cliente a nuestra sección de cotización en la web. 
 

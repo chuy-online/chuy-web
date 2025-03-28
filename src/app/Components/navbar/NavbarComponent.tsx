@@ -5,7 +5,7 @@ import { X, Menu, ChevronDown } from "lucide-react";
 import Image from "next/image";
 
 export default function Navbar() {
-  const [isClient, setIsClient] = useState(false);
+  // const [isClient, setIsClient] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
@@ -31,7 +31,7 @@ export default function Navbar() {
   ];
 
   useEffect(() => {
-    setIsClient(true);
+    // setIsClient(true);
 
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);

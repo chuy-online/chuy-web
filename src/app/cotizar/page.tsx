@@ -228,9 +228,9 @@ export default function CotizationForm() {
   // Fixed: Initialize with empty array instead of [""]
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [requiresDesign, setRequiresDesign] = useState(false);
-  const [isClient, setIsClient] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  // const [isClient, setIsClient] = useState(false);
+  // const [isScrolled, setIsScrolled] = useState(false);
+  // const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [selectedAgent, setSelectedAgent] = useState("");
   const [name, setName] = useState("");
   const [business, setBusiness] = useState("");
@@ -260,10 +260,10 @@ export default function CotizationForm() {
   };
 
   useEffect(() => {
-    setIsClient(true);
+    // setIsClient(true);
 
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
+      //   setIsScrolled(window.scrollY > 10);
     };
 
     window.addEventListener("scroll", handleScroll);
