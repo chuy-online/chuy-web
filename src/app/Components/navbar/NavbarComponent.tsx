@@ -399,7 +399,7 @@ export default function Navbar() {
 
       {isMobileMenuOpen && (
         <div className="lg:hidden fixed inset-0 z-40 bg-[#040641]/95 backdrop-blur-sm">
-          <div className="flex flex-col items-center justify-center h-full space-y-8">
+          <div className="flex flex-col items-center text-white justify-center h-full space-y-8">
             {navItems.map((item) => (
               <div key={item.name} className="flex flex-col items-center">
                 {item.submenu ? (
