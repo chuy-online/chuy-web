@@ -1,4 +1,5 @@
 import { GoogleGenerativeAI } from "@google/generative-ai"; // Importa el SDK de Google Gemini
+import { NextRequest } from "next/server";
 
 const apiKey = process.env.GEMINI_API_KEY; // Asegúrate de tener la API key en tus variables de entorno
 const genAI = new GoogleGenerativeAI(apiKey as string);
@@ -51,12 +52,12 @@ const generationConfig = {
   responseMimeType: "text/plain",
 };
 
-function delay(ms: any) {
+function delay(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 // Exporta una función llamada para el método POST
-export async function POST(req: any) {
+export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
     const { message, history } = body;
