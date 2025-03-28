@@ -51,12 +51,12 @@ const generationConfig = {
   responseMimeType: "text/plain",
 };
 
-function delay(ms) {
+function delay(ms: any) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 // Exporta una función llamada para el método POST
-export async function POST(req) {
+export async function POST(req: any) {
   try {
     const body = await req.json();
     const { message, history } = body;
