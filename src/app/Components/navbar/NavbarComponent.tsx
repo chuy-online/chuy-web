@@ -183,7 +183,7 @@ export default function Navbar() {
                   <>
                     <button
                       onClick={toggleServicesMenu}
-                      className="text-2xl font-medium hover:text-[#76EA3A] transition-colors flex items-center"
+                      className="text-2xl text-white font-medium hover:text-[#76EA3A] transition-colors flex items-center"
                     >
                       {item.name}
                       <ChevronDown className="ml-1 h-6 w-6" />
