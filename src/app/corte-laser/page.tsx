@@ -103,7 +103,7 @@ export default function CorteLaserPage() {
 
                 <Link href="#aplicaciones">
                   <button className="w-full text-white/80 border border-white/20 px-8 py-3 rounded-full text-lg font-semibold inline-flex items-center justify-center group transition-all duration-300 ease-in-out hover:bg-[#76EA3A]/90 hover:text-[#040641] hover:border-transparent">
-                    Ver aplicaciones
+                    Ver Productos
                   </button>
                 </Link>
               </div>
@@ -283,7 +283,7 @@ export default function CorteLaserPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            Aplicaciones
+            Productos
           </motion.h2>
 
           <div className="grid grid-cols-2 gap-8">
@@ -319,6 +319,7 @@ export default function CorteLaserPage() {
               </motion.div>
             ))}
           </div>
+
           <div className=" mt-6 grid grid-cols-1 gap-8">
             <motion.div
               className="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden border border-white/20 hover:border-[#76EA3A]/50 transition-all duration-300 flex flex-col md:flex-row"

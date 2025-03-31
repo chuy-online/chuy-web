@@ -112,7 +112,7 @@ export default function SublimacionPage() {
 
                 <Link href="#aplicaciones">
                   <button className="w-full text-white/80 border border-white/20 px-8 py-3 rounded-full text-lg font-semibold inline-flex items-center justify-center group transition-all duration-300 ease-in-out hover:bg-[#76EA3A]/90 hover:text-[#040641] hover:border-transparent">
-                    Ver aplicaciones
+                    Ver Productos
                     <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                   </button>
                 </Link>
@@ -262,7 +262,7 @@ export default function SublimacionPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            Aplicaciones
+            Productos
           </motion.h2>
 
           {/* <div className="items-center justify-center grid lg:grid-cols-3 gap-6">
@@ -302,6 +302,42 @@ export default function SublimacionPage() {
                 </div>
               </motion.div>
             ))}
+          </div>
+
+          <div className=" mt-6 grid grid-cols-1 gap-8">
+            <motion.div
+              className="bg-white/10 backdrop-blur-md rounded-xl overflow-hidden border border-white/20 hover:border-[#76EA3A]/50 transition-all duration-300 flex flex-col md:flex-row"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0 * 0.1 }}
+            >
+              <div className="lg:w-1/2 h-auto lg:h-96 md:h-auto">
+                <img
+                  alt="laser"
+                  src={
+                    "https://res.cloudinary.com/djuj7xwuj/image/upload/v1743453060/Dise%C3%B1o_sin_t%C3%ADtulo_13_cohfiw.webp"
+                  }
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="lg:items-center p-6 md:w-1/2 flex flex-col justify-center">
+                <h3 className="lg:text-center text-2xl font-semibold text-white mb-2">
+                  Lanyers
+                </h3>
+                <p className="lg:text-center text-white/80 mb-4">
+                  Útiles para llevar identificaciones, acreditaciones, tarjetas
+                  de acceso, llaves y otros objetos pequeños que se necesiten.
+                </p>
+                <div className="lg:items-center">
+                  <Link href="/cotizar">
+                    <button className=" mt-auto bg-[#76EA3A] text-[#040641] px-6 py-2 rounded-lg text-sm font-semibold inline-flex items-center justify-center group transition-all duration-300 ease-in-out hover:bg-[#76EA3A]/90">
+                      Cotizar ahora
+                      <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>

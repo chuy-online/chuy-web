@@ -6,6 +6,7 @@ import Link from "next/link";
 import { ArrowRight, ArrowLeft } from "lucide-react";
 import { motion } from "framer-motion";
 import Footer from "../Components/Footer/Footer";
+
 const images = ["/pop/pop.png", "/pop/pop2.png", "/pop/pop3.png"];
 
 const features = [

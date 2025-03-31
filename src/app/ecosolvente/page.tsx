@@ -138,7 +138,7 @@ export default function EcosolventePage() {
 
                 <Link href="#aplicaciones">
                   <button className="w-full text-white/80 border border-white/20 px-8 py-3 rounded-full text-lg font-semibold inline-flex items-center justify-center group transition-all duration-300 ease-in-out hover:bg-[#76EA3A]/90 hover:text-[#040641] hover:border-transparent">
-                    Ver aplicaciones
+                    Ver Productos
                   </button>
                 </Link>
               </div>
@@ -210,7 +210,7 @@ export default function EcosolventePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            Aplicaciones
+            Productos
           </motion.h2>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">

@@ -27,13 +27,14 @@ const sections = [
       { text: "Pasión por la excelencia", icon: Star },
     ],
   },
+
   {
     title: "Nuestra Visión",
     description:
-      "Ser líderes reconocidos en la transformación digital, creando un impacto positivo en la sociedad a través de soluciones tecnológicas innovadoras.",
+      "  Ser la empresa líder en soluciones de impresión y personalización, ofreciendo innovación, calidad y creatividad en cada proyecto. Ayudando a nuestros clientes a destacar con materiales de alta calidad y diseños únicos.",
     icon: Eye,
     values: [
-      { text: "Liderazgo tecnológico", icon: Rocket },
+      { text: "Liderazgo", icon: Rocket },
       { text: "Impacto global", icon: Users },
       { text: "Mejora continua", icon: CheckCircle },
     ],
