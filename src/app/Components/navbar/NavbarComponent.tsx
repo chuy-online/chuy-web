@@ -69,7 +69,7 @@ export default function Navbar() {
               isScrolled ? "shadow-md" : "mt-4"
             }`}
           >
-            <div className="flex justify-between items-center">
+            <div className="text-white flex justify-between items-center">
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 className="lg:hidden text-white focus:outline-none"
